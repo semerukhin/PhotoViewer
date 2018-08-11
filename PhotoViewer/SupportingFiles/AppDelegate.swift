@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  PhotoViewer
 //
-//  Created by MacBook Air on 11.08.2018.
-//  Copyright © 2018 Ilya Semerukhin. All rights reserved.
+//  Created by Ilya Semerukhin on 11.08.2018.
 //
 
 import UIKit
