@@ -17,13 +17,27 @@
                     <view key="view" contentMode="scaleToFill" id="y2a-A2-Y35">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E4b-eG-YzJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E4b-eG-YzJ" firstAttribute="trailing" secondItem="y2a-A2-Y35" secondAttribute="trailing" id="8OU-bG-qpZ"/>
+                            <constraint firstItem="E4b-eG-YzJ" firstAttribute="bottom" secondItem="y2a-A2-Y35" secondAttribute="bottom" id="EjB-Ef-Fa4"/>
+                            <constraint firstItem="E4b-eG-YzJ" firstAttribute="leading" secondItem="y2a-A2-Y35" secondAttribute="leading" id="EoV-vZ-O7n"/>
+                            <constraint firstItem="E4b-eG-YzJ" firstAttribute="top" secondItem="y2a-A2-Y35" secondAttribute="top" id="Vp0-Ng-rPZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="t7s-tc-NGz"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="E4b-eG-YzJ" id="hgk-uz-dki"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="les-hV-E5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="-302"/>
+            <point key="canvasLocation" x="438.75" y="-302.11267605633805"/>
         </scene>
     </scenes>
 </document>
