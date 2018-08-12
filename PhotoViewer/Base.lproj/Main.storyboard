@@ -73,18 +73,25 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fa-XV-2EB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nn6-Ql-oJZ">
+                                <rect key="frame" x="142" y="298" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2Fa-XV-2EB" firstAttribute="bottom" secondItem="y2a-A2-Y35" secondAttribute="bottom" id="2Oj-Xe-Boc"/>
                             <constraint firstItem="2Fa-XV-2EB" firstAttribute="leading" secondItem="y2a-A2-Y35" secondAttribute="leading" id="Jrg-lX-P7z"/>
                             <constraint firstItem="2Fa-XV-2EB" firstAttribute="trailing" secondItem="y2a-A2-Y35" secondAttribute="trailing" id="TYo-ho-naR"/>
+                            <constraint firstItem="nn6-Ql-oJZ" firstAttribute="centerX" secondItem="t7s-tc-NGz" secondAttribute="centerX" id="Xxd-DW-sGI"/>
                             <constraint firstItem="2Fa-XV-2EB" firstAttribute="top" secondItem="y2a-A2-Y35" secondAttribute="top" id="vmQ-lu-UMr"/>
+                            <constraint firstItem="nn6-Ql-oJZ" firstAttribute="centerY" secondItem="t7s-tc-NGz" secondAttribute="centerY" id="y4g-EQ-63w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t7s-tc-NGz"/>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="2Fa-XV-2EB" id="QkR-Rc-aqM"/>
+                        <outlet property="spinner" destination="nn6-Ql-oJZ" id="Olz-zi-G47"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="les-hV-E5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
