@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QAW-fe-gLc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="on7-27-ke4">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,9 +7,61 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Library View Controller-->
+        <scene sceneID="nJc-qM-aHB">
+            <objects>
+                <viewController id="FzS-vY-L1t" customClass="LibraryViewController" customModule="PhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Oj-37-QG8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-6R-msb">
+                                <rect key="frame" x="44" y="231.5" width="233" height="169"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v1-Nj-L9C">
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Facade of a bank"/>
+                                        <connections>
+                                            <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Facade of a bank" id="EWS-kD-5Dh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXZ-wd-Qcb">
+                                        <rect key="frame" x="0.0" y="59" width="233" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Ventilation duct"/>
+                                        <connections>
+                                            <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Ventilation duct" id="o57-be-9Lv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9c-zd-9aH">
+                                        <rect key="frame" x="0.0" y="118" width="233" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Rocks in the wall"/>
+                                        <connections>
+                                            <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Rocks in the wall" id="1AI-T5-w8w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bmi-6R-msb" firstAttribute="centerX" secondItem="Kvo-nm-Rma" secondAttribute="centerX" id="FUq-QM-zvR"/>
+                            <constraint firstItem="bmi-6R-msb" firstAttribute="centerY" secondItem="Kvo-nm-Rma" secondAttribute="centerY" id="hIR-82-8Pn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kvo-nm-Rma"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mjq-Ai-flC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLf-NU-HYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093" y="-302"/>
+        </scene>
         <!--Image View Controller-->
         <scene sceneID="t9M-DI-EvW">
             <objects>
@@ -37,7 +89,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="les-hV-E5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438.75" y="-302.11267605633805"/>
+            <point key="canvasLocation" x="1091" y="485"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="CTW-O9-kZH">
+            <objects>
+                <splitViewController id="on7-27-ke4" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="PM3-Um-I6L" kind="relationship" relationship="masterViewController" id="duq-zu-6Nn"/>
+                        <segue destination="QAW-fe-gLc" kind="relationship" relationship="detailViewController" id="PpM-df-fj2"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M30-mC-Dfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613" y="51"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nBW-o5-ykj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PM3-Um-I6L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8FH-ql-2FU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FzS-vY-L1t" kind="relationship" relationship="rootViewController" id="R5a-NC-YZo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ort-07-NR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="-302"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EWS-kD-5Dh"/>
+    </inferredMetricsTieBreakers>
 </document>

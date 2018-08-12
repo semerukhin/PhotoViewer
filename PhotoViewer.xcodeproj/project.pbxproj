@@ -14,6 +14,7 @@
 		D064E08F211F316C00463CC3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064E08E211F316C00463CC3 /* ImageViewController.swift */; };
 		D064E091211F565F00463CC3 /* DemoURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064E090211F565F00463CC3 /* DemoURLs.swift */; };
 		D064E093211F5FD100463CC3 /* pawel-czerwinski-770637-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D064E092211F5FD000463CC3 /* pawel-czerwinski-770637-unsplash.jpg */; };
+		D064E09521204C0200463CC3 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064E09421204C0200463CC3 /* LibraryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D064E08E211F316C00463CC3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		D064E090211F565F00463CC3 /* DemoURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoURLs.swift; sourceTree = "<group>"; };
 		D064E092211F5FD000463CC3 /* pawel-czerwinski-770637-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pawel-czerwinski-770637-unsplash.jpg"; sourceTree = "<group>"; };
+		D064E09421204C0200463CC3 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,10 @@
 		D064E07A211F2DC700463CC3 /* PhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				D064E090211F565F00463CC3 /* DemoURLs.swift */,
 				D064E07F211F2DC700463CC3 /* Main.storyboard */,
+				D064E09421204C0200463CC3 /* LibraryViewController.swift */,
 				D064E08E211F316C00463CC3 /* ImageViewController.swift */,
+				D064E090211F565F00463CC3 /* DemoURLs.swift */,
 				D064E092211F5FD000463CC3 /* pawel-czerwinski-770637-unsplash.jpg */,
 				D064E087211F2DC900463CC3 /* Info.plist */,
 				D064E08D211F2E1F00463CC3 /* SupportingFiles */,
@@ -152,6 +155,7 @@
 			files = (
 				D064E08F211F316C00463CC3 /* ImageViewController.swift in Sources */,
 				D064E07C211F2DC700463CC3 /* AppDelegate.swift in Sources */,
+				D064E09521204C0200463CC3 /* LibraryViewController.swift in Sources */,
 				D064E091211F565F00463CC3 /* DemoURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
