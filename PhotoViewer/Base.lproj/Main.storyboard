@@ -20,27 +20,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-6R-msb">
-                                <rect key="frame" x="44" y="231.5" width="233" height="169"/>
+                                <rect key="frame" x="65.5" y="242" width="190" height="148"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v1-Nj-L9C">
-                                        <rect key="frame" x="0.0" y="0.0" width="233" height="51"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Facade of a bank"/>
                                         <connections>
                                             <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Facade of a bank" id="EWS-kD-5Dh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXZ-wd-Qcb">
-                                        <rect key="frame" x="0.0" y="59" width="233" height="51"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <rect key="frame" x="0.0" y="52" width="190" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Ventilation duct"/>
                                         <connections>
                                             <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Ventilation duct" id="o57-be-9Lv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9c-zd-9aH">
-                                        <rect key="frame" x="0.0" y="118" width="233" height="51"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <rect key="frame" x="0.0" y="104" width="190" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Rocks in the wall"/>
                                         <connections>
                                             <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Rocks in the wall" id="1AI-T5-w8w"/>
