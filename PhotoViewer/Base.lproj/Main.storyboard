@@ -27,7 +27,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Facade of a bank"/>
                                         <connections>
-                                            <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Facade of a bank" id="EWS-kD-5Dh"/>
+                                            <segue destination="xre-I6-pvE" kind="showDetail" identifier="Facade of a bank" id="EWS-kD-5Dh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXZ-wd-Qcb">
@@ -35,7 +35,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Ventilation duct"/>
                                         <connections>
-                                            <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Ventilation duct" id="o57-be-9Lv"/>
+                                            <segue destination="xre-I6-pvE" kind="showDetail" identifier="Ventilation duct" id="o57-be-9Lv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9c-zd-9aH">
@@ -43,7 +43,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Rocks in the wall"/>
                                         <connections>
-                                            <segue destination="QAW-fe-gLc" kind="showDetail" identifier="Rocks in the wall" id="1AI-T5-w8w"/>
+                                            <segue destination="xre-I6-pvE" kind="showDetail" identifier="Rocks in the wall" id="1AI-T5-w8w"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -89,6 +89,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t7s-tc-NGz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xQI-Lf-zxK"/>
                     <connections>
                         <outlet property="scrollView" destination="2Fa-XV-2EB" id="QkR-Rc-aqM"/>
                         <outlet property="spinner" destination="nn6-Ql-oJZ" id="Olz-zi-G47"/>
@@ -96,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="les-hV-E5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1091" y="485"/>
+            <point key="canvasLocation" x="1929" y="485"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="CTW-O9-kZH">
@@ -104,7 +105,7 @@
                 <splitViewController id="on7-27-ke4" sceneMemberID="viewController">
                     <connections>
                         <segue destination="PM3-Um-I6L" kind="relationship" relationship="masterViewController" id="duq-zu-6Nn"/>
-                        <segue destination="QAW-fe-gLc" kind="relationship" relationship="detailViewController" id="PpM-df-fj2"/>
+                        <segue destination="xre-I6-pvE" kind="relationship" relationship="detailViewController" id="PpM-df-fj2"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M30-mC-Dfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,8 +130,26 @@
             </objects>
             <point key="canvasLocation" x="291" y="-302"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YeA-Xk-arm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xre-I6-pvE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sRK-tA-lzN">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QAW-fe-gLc" kind="relationship" relationship="rootViewController" id="9V6-Ao-SRC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFY-QM-pIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089.375" y="484.85915492957747"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EWS-kD-5Dh"/>
+        <segue reference="1AI-T5-w8w"/>
     </inferredMetricsTieBreakers>
 </document>
